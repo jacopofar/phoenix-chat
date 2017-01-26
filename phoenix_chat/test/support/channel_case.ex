@@ -20,11 +20,6 @@ defmodule PhoenixChat.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias PhoenixChat.Repo
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
-
 
       # The default endpoint for testing
       @endpoint PhoenixChat.Endpoint
@@ -32,11 +27,6 @@ defmodule PhoenixChat.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixChat.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(PhoenixChat.Repo, {:shared, self()})
-    end
 
     :ok
   end

@@ -36,7 +36,7 @@ defmodule PhoenixChat.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_phoenix_chat_key",
-    signing_salt: "e6exvFHE"
+    signing_salt: "OChL03VZ"
 
   plug PhoenixChat.Router
 end

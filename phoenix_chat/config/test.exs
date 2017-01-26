@@ -8,12 +8,3 @@ config :phoenix_chat, PhoenixChat.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :phoenix_chat, PhoenixChat.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "phoenix_chat_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
