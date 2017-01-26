@@ -1,5 +1,11 @@
 # PhoenixChat
 
+A demo chat system in Elixir made to experiment with the language and the Phoenix framework
+
+How to use
+==========
+(this part is shamelessly kept from the generated README):
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
